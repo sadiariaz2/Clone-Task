@@ -1,0 +1,176 @@
+body {
+    background-color: #231651;  /* Dark background for the body */
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/*  header styles of the page with nav bar and search button */
+.header {
+    background-color: #EEF36A;
+    justify-content: space-between;  /* Light yellow background for the header */
+    padding: 16px;
+    align-items: center;
+    display: flex;
+}
+
+/*  header styles of the page with nav bar and search button */
+.header h1 {
+    color: #070410;  /* White color for text */
+    margin: 0;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
+/*  nav styles of the page */
+.nav {
+    display: flex;
+    gap: 17px;
+}
+
+/*  nav link styles */
+.nav a {
+    font-family: 'Lato', sans-serif bold;
+    text-decoration: none;
+    color: #070410;  
+}
+
+/*  search button styles */
+.search {
+    color: #ffffff;  
+    background-color: #231651;
+    font-family: 'Teko', sans-serif;
+    padding: 20px 40px;
+    font-size: 2em;
+    border: 1px solid #4DCCBD;
+}
+
+/* main styles of the page */
+main {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 32px;
+}
+
+/* center card container styles */
+.center-card-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-card-container .poster-card {
+    background-color: #231651;  
+    text-align: center;
+    border-radius: 8px;
+    gap: 16px;
+    width: 300px;
+    padding: 16px;
+    font-size: 1.6em;
+}
+
+/* poster-card styles */
+.poster-card {
+    margin-bottom: 16px;
+    background-color: #4DCCBD;  
+    border-radius: 8px;
+    gap: 16px;
+    text-align: center;
+    padding: 16px;
+    font-size: 1.5em;
+}
+
+/* movie title styles */
+.movie-title {
+    color: #070410;  /* White color for title text */
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    
+}
+
+/* movie description styles */
+.movie-description {
+    text-align: left;  
+    font-size: 1em;
+    color: #070410;  /* White color for text */
+    font-family: 'Lato', sans-serif;   
+}
+
+/* movie poster styles */
+.movie-poster {
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 300px;
+}
+
+/* watch-now button styles */
+.watch-now {
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 8px;
+    font-family: 'Teko', sans-serif;
+    background-color:#231651 ; 
+    color: #ffffff;  
+}
+
+/* layout for first row */
+.first-row-layout .poster-card-content {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* layout for horizontal cards */
+.horizontal-layout {
+    align-items: flex-start;
+    gap: 50px;
+    text-align: center;
+    display: flex;
+}
+
+.horizontal-layout .movie-poster {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+}
+
+/* media queries */
+@media (max-width: 720px) {
+    .nav a {
+        display: none;
+    }
+}
+
+/* media queries for larger screens */
+@media (min-width: 1024px) {
+    .tab-card {
+        display: none;
+    }
+}
+
+/* responsive media query for screen widths 720px and up */
+@media (min-width: 720px) {
+    .real-container {
+        padding: 80px;
+    }
+    .two-card-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+       
+    }
+    .two-card-row .poster-card {
+        width: 48%;
+    }
+    .last-card {
+        display: none;
+    }
+}
